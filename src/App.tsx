@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Amplify } from 'aws-amplify'
 import { generateClient } from 'aws-amplify/api'
 import type { Schema } from '../amplify/data/resource'
+import { Auth } from './Auth2.tsx';
 
 const client = generateClient<Schema>();
 
@@ -22,6 +21,7 @@ function App() {
   })
   return (
     <>
+    <Auth></Auth>
     <button onClick={sayHello} >Say Hello</button>
     </>
   )
