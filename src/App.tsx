@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 import { Amplify } from 'aws-amplify'
 import { generateClient } from 'aws-amplify/api'
