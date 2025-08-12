@@ -7,6 +7,7 @@ import { Auth } from './Auth2.tsx';
 
 const client = generateClient<Schema>();
 
+
 async function sayHello() {
   const result = await client.queries.sayHello({
     name: "Pauly"
